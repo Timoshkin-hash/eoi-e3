@@ -1,0 +1,28 @@
+{
+  "task_id": 3,
+  "title": "Выбор ценовой стратегии для AI-сервиса по созданию контента",
+  "project_name": "AI-Копирайтер",
+  "market_potential_users": 500000,
+  "market_growth_annual": 0.25,
+  "development_cost_rub": 15000000,
+  "monthly_maintenance_cost_rub": 2000000,
+  "cac_channels_rub": {
+    "Реклама": 1500,
+    "Контент-маркетинг": 800,
+    "Виральный рост": 100
+  },
+  "horizon_years": 3,
+  "initial_users": 1000,
+  "annual_discount_rate": 0.12,
+  "strategies": {
+    "Freemium": {"price_rub_month": 2000, "conversion": 0.02, "churn": 0.08},
+    "Подписка": {"price_rub_month": 1500, "conversion": 0.20, "churn": 0.05},
+    "Динамическая": {"price_rub_month": 1200, "conversion": 0.15, "churn": 0.06},
+    "Персонализированная": {"price_rub_month": 1500, "conversion": 0.12, "churn": 0.04}
+  },
+  "growth_rates": [1.0, 0.5, 0.2],
+  "teacher_solution_reference": {
+    "recommended_strategy": "Подписка",
+    "teacher_npv_mln_rub": {"Freemium": -18.2, "Подписка": 4.8, "Динамическая": -5.4, "Персонализированная": 2.8}
+  }
+}
